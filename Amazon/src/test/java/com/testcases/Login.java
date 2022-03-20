@@ -20,6 +20,7 @@ public class Login  extends BaseClass {
 	Helper.captureScreenshot(driver);
 	}
 	
+	//Test 2
 	@Test(priority = 2)
 	public  void LoginOut() throws InterruptedException {
 	 logger = report.createTest("Login Out");
