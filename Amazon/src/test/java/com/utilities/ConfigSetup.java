@@ -20,6 +20,7 @@ public class ConfigSetup {
 					System.out.print("Unable to load file" + e.getMessage());
 				}
 		
+				
 	}
 	
 	public  String getBrowser() {
