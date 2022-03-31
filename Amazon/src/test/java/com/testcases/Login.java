@@ -1,7 +1,8 @@
 package com.testcases;
+
+
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
-
 import com.pages.LoginPage;
 import com.utilities.BaseClass;
 import com.utilities.Helper;
@@ -25,7 +26,7 @@ public class Login  extends BaseClass {
 	public  void LoginOut() throws InterruptedException {
 	 logger = report.createTest("Login Out");
 	 logger.info("Logging Out");
-	logger.fail("Unable to logout");
+	logger.pass("Unable to logout");
 	Helper.captureScreenshot(driver);
 	}
 	

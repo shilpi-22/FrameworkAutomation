@@ -15,7 +15,7 @@ import org.testng.annotations.BeforeSuite;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class BaseClass {
 	
@@ -29,7 +29,7 @@ public class BaseClass {
 	public void setUpSuite() {
 		Reporter.log("Setting up reports and test is getting ready", true);
 		cs =new ConfigSetup();
-		ExtentHtmlReporter extent = new ExtentHtmlReporter(new File(System.getProperty("user.dir") + "/ExtentReport/Amazon_" + Helper.getCurrentDateTime() + ".html"));
+		ExtentSparkReporter extent = new ExtentSparkReporter(new File(System.getProperty("user.dir") + "/ExtentReport/Amazon_" + Helper.getCurrentDateTime() + ".html"));
 		report = new ExtentReports();
 		report.attachReporter(extent);
 		
